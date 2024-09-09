@@ -5,15 +5,15 @@ using UnityEngine;
 [RequireComponent(typeof(DestructionEffect))]
 public class EnemyController : MonoBehaviour
 {
-    [SerializeField] private ScoreBoard _scoreBoard;
+    [SerializeField, Range(1, 10)] private int _points = 1;
     [SerializeField, Range(1f, 100f)] private float _speed = 10f;
-
+    
     private Rigidbody _rb;
     private DestructionEffect _destructionEffect;
 
     public void TakeDamage()
     {
-        //_scoreBoard.Increase(points);
+        Score.Increase(_points);
 
         Destroy(gameObject);
     }
@@ -30,7 +30,7 @@ public class EnemyController : MonoBehaviour
     {
         if (other.CompareTag("Finish"))
         {
-            //_scoreBoard.Decrease(points);
+            Score.Decrease(_points);
 
             _destructionEffect.PlayEffect();
         }
