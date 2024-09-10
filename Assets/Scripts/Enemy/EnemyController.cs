@@ -13,10 +13,7 @@ public class EnemyController : MonoBehaviour
 
     public void TakeDamage()
     {
-        //Score.Increase(_points);
-        GameObject score = GameObject.FindWithTag("Score");
-        if (score != null)
-            score.GetComponent<ScoreBoard>().Increase(_points);
+        Score.Increase(_points);
 
         Destroy(gameObject);
     }
@@ -33,10 +30,7 @@ public class EnemyController : MonoBehaviour
     {
         if (other.CompareTag("Finish"))
         {
-            //Score.Decrease(_points);
-            GameObject score = GameObject.FindWithTag("Score");
-            if (score != null)//Не знаю, нужна ли эта проверка. Была в методичке, убирать не стал. В TakeDamage тоже оставил
-                score.GetComponent<ScoreBoard>().Decrease(_points);
+            Score.Decrease(_points);
 
             _destructionEffect.PlayEffect();
         }
