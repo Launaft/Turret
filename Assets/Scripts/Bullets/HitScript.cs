@@ -9,7 +9,7 @@ public class HitScript : MonoBehaviour
 
     public GameObject explosion;
 
-    public LayerMask bomb_layer;
+    public LayerMask enemy_layer;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -22,7 +22,7 @@ public class HitScript : MonoBehaviour
 
     void dealDamage()
     {
-        Collider[] cols = Physics.OverlapSphere(transform.position, explosionRadius, bomb_layer);
+        Collider[] cols = Physics.OverlapSphere(transform.position, explosionRadius, enemy_layer);
         foreach (Collider col in cols)
             col.transform.GetComponent<EnemyController>().TakeDamage();
     }

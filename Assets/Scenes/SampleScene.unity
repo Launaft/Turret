@@ -203,6 +203,26 @@ MonoBehaviour:
     m_Bits: 8
   _horizontalRotationSpeed: 5
   _verticalRotationSpeed: 5
+--- !u!114 &413811635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413811632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32ae8d2953b129479584207ea236d1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.5
+  s_point: {fileID: 458587069}
+  projectile: {fileID: 7889607417512731631, guid: 0c621a1ee42f64b43aad93223bcd34b7, type: 3}
+--- !u!4 &458587069 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4703932692914808, guid: 7191a0df8b6695d449a0f18a361bc311, type: 3}
+  m_PrefabInstance: {fileID: 1602686869}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &470745454
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,10 +271,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1499,6 +1519,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1875090778556656, guid: 7191a0df8b6695d449a0f18a361bc311, type: 3}
       insertIndex: -1
       addedObject: {fileID: 413811633}
+    - targetCorrespondingSourceObject: {fileID: 1875090778556656, guid: 7191a0df8b6695d449a0f18a361bc311, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 413811635}
   m_SourcePrefab: {fileID: 100100000, guid: 7191a0df8b6695d449a0f18a361bc311, type: 3}
 --- !u!4 &1602686870 stripped
 Transform:
@@ -1587,7 +1610,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1924482594}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 693546128}
+        m_TargetAssemblyTypeName: ScoreBoard, Assembly-CSharp
+        m_MethodName: Restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1924482594
 MonoBehaviour:
   m_ObjectHideFlags: 0
