@@ -1,10 +1,19 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ScoreBoard : MonoBehaviour
 {
     public GameObject defeat_panel;
     public TMP_Text score_text;
+
+    public void Restart()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    private void Start() => scoreUpdate();
 
     private void Update() => scoreUpdate();
 

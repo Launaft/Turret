@@ -585,6 +585,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 27bb2a1c0fbf1e443a246d7216f816fd, type: 3}
   m_PrefabInstance: {fileID: 354247817}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &393117608 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4703932692914808, guid: 7191a0df8b6695d449a0f18a361bc311, type: 3}
+  m_PrefabInstance: {fileID: 1602686869}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &413811632 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1875090778556656, guid: 7191a0df8b6695d449a0f18a361bc311, type: 3}
@@ -614,6 +619,21 @@ MonoBehaviour:
     m_Bits: 128
   _horizontalRotationSpeed: 5
   _verticalRotationSpeed: 5
+--- !u!114 &413811635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413811632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32ae8d2953b129479584207ea236d1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.1
+  s_point: {fileID: 393117608}
+  projectile: {fileID: 7889607417512731631, guid: 0c621a1ee42f64b43aad93223bcd34b7, type: 3}
 --- !u!4 &430273571 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6aa86ff4e04f4904bbfe9dbde903b7cb, type: 3}
@@ -1053,7 +1073,7 @@ Transform:
   m_GameObject: {fileID: 529023485}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1078,8 +1098,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 400, y: 100, z: 1}
-  m_Center: {x: 0, y: 40, z: 0}
+  m_Size: {x: 2400, y: 600, z: 1}
+  m_Center: {x: 0, y: 0, z: 150}
 --- !u!1001 &630454349
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1891,7 +1911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d1704e6e8c7b77e4794009ed4c8b1c86, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1.73
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d1704e6e8c7b77e4794009ed4c8b1c86, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3710,6 +3730,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1875090778556656, guid: 7191a0df8b6695d449a0f18a361bc311, type: 3}
       insertIndex: -1
       addedObject: {fileID: 413811633}
+    - targetCorrespondingSourceObject: {fileID: 1875090778556656, guid: 7191a0df8b6695d449a0f18a361bc311, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 413811635}
   m_SourcePrefab: {fileID: 100100000, guid: 7191a0df8b6695d449a0f18a361bc311, type: 3}
 --- !u!4 &1602686870 stripped
 Transform:
@@ -3962,13 +3985,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 490791574}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 693546128}
+        m_TargetAssemblyTypeName: ScoreBoard, Assembly-CSharp
+        m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
