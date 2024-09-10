@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2687734374455131179}
   - component: {fileID: 7169813097071850357}
   - component: {fileID: 4202933403813529145}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TankTracksLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 5083000947313468675}
   - component: {fileID: 7669710828057057515}
   - component: {fileID: 3183643979781811572}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TankTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,9 +181,9 @@ GameObject:
   - component: {fileID: 8557373309002067099}
   - component: {fileID: 7119493749773037594}
   - component: {fileID: 5062194217968362613}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tank
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -289,7 +289,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4283610457969996682}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TankRenderers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +326,7 @@ GameObject:
   - component: {fileID: 3142466725445508570}
   - component: {fileID: 1729096708965627482}
   - component: {fileID: 17712015948710846}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TankChassis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -411,7 +411,7 @@ GameObject:
   - component: {fileID: 2265605359975461662}
   - component: {fileID: 7874990255288878932}
   - component: {fileID: 174846647067979828}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TankTracksRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
