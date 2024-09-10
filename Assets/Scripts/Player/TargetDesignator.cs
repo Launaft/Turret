@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class TargetDesignator : MonoBehaviour
 {
-    [SerializeField, Range(10, 500)] private int _lenght = 100;
+    [SerializeField, Range(10, 1000)] private int _lenght = 100;
     
     LineRenderer _lineRenderer;
 
