@@ -18,12 +18,13 @@ public class Player : MonoBehaviour
         RaycastHit hit;
         Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
 
+        
         if (Physics.Raycast(ray, out hit, 1000f, _bgLayer))
         {
             Vector3 dir = hit.point - transform.position;
             Vector3 xz = dir;
             xz.y = 0;
-
+            
             _turret.rotation = Quaternion.RotateTowards(_turret.rotation, Quaternion.LookRotation(xz), _horizontalRotationSpeed * Time.deltaTime);
             _barrel.rotation = Quaternion.RotateTowards(_barrel.rotation, Quaternion.LookRotation(dir), _verticalRotationSpeed * Time.deltaTime);
         }
