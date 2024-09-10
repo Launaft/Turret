@@ -631,7 +631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32ae8d2953b129479584207ea236d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.1
+  delay: 0.5
   s_point: {fileID: 393117608}
   projectile: {fileID: 7889607417512731631, guid: 0c621a1ee42f64b43aad93223bcd34b7, type: 3}
 --- !u!4 &430273571 stripped
