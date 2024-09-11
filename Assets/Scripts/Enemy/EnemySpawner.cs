@@ -7,7 +7,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField, Range(1f, 2000f)] private float _leftBoarder = 100f;
     [SerializeField, Range(1f, 2000f)] private float _rightBoarder = 100f;
 
-    [SerializeField] private GameObject _enemy;
+    [SerializeField] private GameObject[] _enemies;
 
     private void Start() => StartCoroutine(EnemySpawn());
 
@@ -23,7 +23,8 @@ public class EnemySpawner : MonoBehaviour
 
             Vector3 rotation = new Vector3(0, 180, 0);
 
-            Instantiate(_enemy, spawnPos, Quaternion.Euler(rotation));
+            int rnd = Random.Range(0, 3);
+            Instantiate(_enemies[rnd], spawnPos, Quaternion.Euler(rotation));
         }
     }
 }

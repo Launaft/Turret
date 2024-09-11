@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(DestructionEffect))]
 public class EnemyController : MonoBehaviour
 {
-    [SerializeField, Range(1, 10)] private int _points = 1;
+    [SerializeField, Range(1, 10)] private int _points = 5;
     [SerializeField, Range(1f, 100f)] private float _speed = 10f;
     
     private Rigidbody _rb;
@@ -30,7 +30,7 @@ public class EnemyController : MonoBehaviour
     {
         if (other.CompareTag("Finish"))
         {
-            Score.Decrease(_points);
+            Score.Decrease(1);
 
             _destructionEffect.PlayEffect();
         }

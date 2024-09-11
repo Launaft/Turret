@@ -14,13 +14,7 @@ public class Shots : MonoBehaviour
     float time = 0;
 
     private void Start() => time = delay;
-    // Start is called before the first frame update
-    //void Start()
-    //{
-        
-    //}
 
-    // Update is called once per frame
     void LateUpdate()
     {
         time += Time.deltaTime;
@@ -28,6 +22,7 @@ public class Shots : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
+                Score.Decrease(1);
                 Instantiate(projectile, s_point.position, s_point.rotation);
                 time = 0;
             }

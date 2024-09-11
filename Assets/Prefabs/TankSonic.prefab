@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6250227627257838410, guid: 0b27fc778511da74da69c0741512e531, type: 3}
+  - {fileID: 2100000, guid: 93f268b46ed31584f9027d03f633a607, type: 2}
   - {fileID: -2283591071801479797, guid: 0b27fc778511da74da69c0741512e531, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -145,7 +145,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6250227627257838410, guid: 0b27fc778511da74da69c0741512e531, type: 3}
+  - {fileID: 2100000, guid: 93f268b46ed31584f9027d03f633a607, type: 2}
   - {fileID: -2283591071801479797, guid: 0b27fc778511da74da69c0741512e531, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: 7119493749773037594}
   - component: {fileID: 5062194217968362613}
   m_Layer: 6
-  m_Name: Tank
+  m_Name: TankSonic
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -198,7 +198,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 70}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4283610457969996682}
@@ -278,8 +278,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c6117c555612fc4bae1656374b46be6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _points: 5
-  _speed: 10
+  _points: 7
+  _speed: 20
 --- !u!1 &5376200575266207056
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,7 +376,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6250227627257838410, guid: 0b27fc778511da74da69c0741512e531, type: 3}
+  - {fileID: 2100000, guid: 93f268b46ed31584f9027d03f633a607, type: 2}
   - {fileID: -3853816671656218547, guid: 0b27fc778511da74da69c0741512e531, type: 3}
   - {fileID: -2283591071801479797, guid: 0b27fc778511da74da69c0741512e531, type: 3}
   m_StaticBatchInfo:
@@ -461,7 +461,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6250227627257838410, guid: 0b27fc778511da74da69c0741512e531, type: 3}
+  - {fileID: 2100000, guid: 93f268b46ed31584f9027d03f633a607, type: 2}
   - {fileID: -2283591071801479797, guid: 0b27fc778511da74da69c0741512e531, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
